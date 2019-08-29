@@ -26,6 +26,8 @@
 		CE042A892315236A00E57E55 /* Notebook+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE042A882315236A00E57E55 /* Notebook+Extensions.swift */; };
 		CE042A8B23152E8200E57E55 /* Note+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE042A8A23152E8200E57E55 /* Note+Extensions.swift */; };
 		CE042A8D2317DD4A00E57E55 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE042A8C2317DD4900E57E55 /* ListDataSource.swift */; };
+		CEE3E10D2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */; };
+		CEE3E10F2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		CE042A882315236A00E57E55 /* Notebook+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+Extensions.swift"; sourceTree = "<group>"; };
 		CE042A8A23152E8200E57E55 /* Note+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extensions.swift"; sourceTree = "<group>"; };
 		CE042A8C2317DD4900E57E55 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		CEE3E10B2317F0EF00998AF1 /* Mooskine-2019-08-29-attributedString.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mooskine-2019-08-29-attributedString.xcdatamodel"; sourceTree = "<group>"; };
+		CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = updateToAttributedStrings.xcmappingmodel; sourceTree = "<group>"; };
+		CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToAttributedStringsPolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,8 @@
 				CE042A82230E73B800E57E55 /* Mooskine.xcdatamodeld */,
 				CE042A85230E852700E57E55 /* DataController.swift */,
 				CE042A8C2317DD4900E57E55 /* ListDataSource.swift */,
+				CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */,
+				CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE3E10F2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift in Sources */,
 				039B105C1EDC5469002EA94F /* AppDelegate.swift in Sources */,
 				03B2699E1F2F8AAA00C7433C /* NotebookCell.swift in Sources */,
 				CE042A84230E73B800E57E55 /* Mooskine.xcdatamodeld in Sources */,
@@ -318,6 +326,7 @@
 				CE042A8B23152E8200E57E55 /* Note+Extensions.swift in Sources */,
 				03B269A01F2F8AAD00C7433C /* Cell.swift in Sources */,
 				03B2699D1F2F8AA100C7433C /* NotesListViewController.swift in Sources */,
+				CEE3E10D2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel in Sources */,
 				CE042A892315236A00E57E55 /* Notebook+Extensions.swift in Sources */,
 				CE042A8D2317DD4A00E57E55 /* ListDataSource.swift in Sources */,
 				03B2699F1F2F8AAA00C7433C /* NoteCell.swift in Sources */,
@@ -569,9 +578,10 @@
 		CE042A82230E73B800E57E55 /* Mooskine.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				CEE3E10B2317F0EF00998AF1 /* Mooskine-2019-08-29-attributedString.xcdatamodel */,
 				CE042A83230E73B800E57E55 /* Mooskine.xcdatamodel */,
 			);
-			currentVersion = CE042A83230E73B800E57E55 /* Mooskine.xcdatamodel */;
+			currentVersion = CEE3E10B2317F0EF00998AF1 /* Mooskine-2019-08-29-attributedString.xcdatamodel */;
 			path = Mooskine.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
