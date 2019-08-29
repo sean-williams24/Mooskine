@@ -28,6 +28,7 @@
 		CE042A8D2317DD4A00E57E55 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE042A8C2317DD4900E57E55 /* ListDataSource.swift */; };
 		CEE3E10D2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */; };
 		CEE3E10F2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */; };
+		CEE3E11123181ABE00998AF1 /* Pathifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E11023181ABE00998AF1 /* Pathifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CEE3E10B2317F0EF00998AF1 /* Mooskine-2019-08-29-attributedString.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mooskine-2019-08-29-attributedString.xcdatamodel"; sourceTree = "<group>"; };
 		CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = updateToAttributedStrings.xcmappingmodel; sourceTree = "<group>"; };
 		CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToAttributedStringsPolicy.swift; sourceTree = "<group>"; };
+		CEE3E11023181ABE00998AF1 /* Pathifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pathifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				CE042A8C2317DD4900E57E55 /* ListDataSource.swift */,
 				CEE3E10C2317F7DB00998AF1 /* updateToAttributedStrings.xcmappingmodel */,
 				CEE3E10E2317F8C700998AF1 /* UpdateToAttributedStringsPolicy.swift */,
+				CEE3E11023181ABE00998AF1 /* Pathifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				CE042A892315236A00E57E55 /* Notebook+Extensions.swift in Sources */,
 				CE042A8D2317DD4A00E57E55 /* ListDataSource.swift in Sources */,
 				03B2699F1F2F8AAA00C7433C /* NoteCell.swift in Sources */,
+				CEE3E11123181ABE00998AF1 /* Pathifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
