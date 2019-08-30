@@ -11,16 +11,32 @@ import CoreData
 
 class DataController {
     
+    // Create persistent container
+    let persistentContainer: NSPersistentContainer
+    
     // Convience property to access the context
     var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
     
-    // Create persistent container
-    let persistentContainer: NSPersistentContainer
+    var backgroundContext: NSManagedObjectContext!
+
     
     init(modelName: String) {
         persistentContainer = NSPersistentContainer(name: modelName)
+    }
+    
+    func configureContexts() {
+        //create context associated with a private queue
+        backgroundContext = persistentContainer.newBackgroundContext()
+        
+        viewContext.automaticallyMergesChangesFromParent = true
+        backgroundContext.automaticallyMergesChangesFromParent = true
+        
+        // set to prefer background property values incase of conflict
+        backgroundContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+        // in case of conflict prefer values from persistent store
+        viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
     }
     
     // Load persistent Store with convenience function
@@ -31,6 +47,7 @@ class DataController {
             }
             
             self.autoSaveViewContext()
+            self.configureContexts()
             completion?()
         }
     }
