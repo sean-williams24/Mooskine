@@ -118,28 +118,31 @@ extension NoteDetailsViewController {
     }
     
     @IBAction func boldTapped(sender: Any) {
+        let backgroundContext: NSManagedObjectContext! = dataController.backgroundContext
+        
         let newText = textView.attributedText.mutableCopy() as! NSMutableAttributedString
         newText.addAttribute(.font, value: UIFont(name: "OpenSans-Bold", size: 22)!, range: textView.selectedRange)
         
-        let selectedTextRange = textView.selectedTextRange
+        let noteID = note.objectID
         
-        textView.attributedText = newText
-        textView.selectedTextRange = selectedTextRange
-        note.attributedText = textView.attributedText
-        try? dataController.viewContext.save()
+        backgroundContext.perform {
+            let backgroundNote = backgroundContext.object(with: noteID) as! Note
+            sleep(5)
+
+            backgroundNote.attributedText = newText
+            try? backgroundContext.save()
+        }
     }
     
     @IBAction func redTapped(sender: Any) {
         let backgroundContext: NSManagedObjectContext! = dataController.backgroundContext
         
         let newText = textView.attributedText.mutableCopy() as! NSMutableAttributedString
-
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor : UIColor.red,
             .underlineStyle : 1,
             .underlineColor : UIColor.red
             ]
-        
         newText.addAttributes(attributes, range: textView.selectedRange)
         
         let noteID = note.objectID
